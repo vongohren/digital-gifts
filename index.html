@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; script-src *;img-src * 'self' data: http:;"> -->
+    <title>Gaven din</title>
+    <style type="text/css">
+      body {
+          margin: 0;
+          padding: 0;
+      }
+      .solid-container {
+        height: 100vh;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="solid-container">
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/pdf.min.js"></script>
+
+    <!-- <script src="js/flip-book.js"></script> -->
+    <script src="js/3dflipbook.min.js"></script>
+
+
+    <script type="text/javascript">
+     var totalPages = 5;
+    //  var person = location.hash.substr(1);
+    var person = "thewell"
+
+      function gift(n) {
+        return {
+          type: 'image',
+          src: 'src/'+person+'/img-'+(n+1)+'.png',
+          interactive: false
+        };
+      }
+      $('.solid-container').FlipBook({
+        pageCallback: gift,
+        pages: totalPages,
+        propertiesCallback: function(props) {
+          props.cover.color = 0x000000;
+          props.cssLayersLoader = function(n, clb) {
+            if(n==totalPages-1) {
+                clb([{
+                  html: '<iframe class="center-page" src="./src/'+person+'/doodle.html" width="100%" height="100%"></iframe>'
+                }]);
+            }
+          };
+          return props;
+        },
+      });
+    </script>
+
+
+  </body>
+</html>
