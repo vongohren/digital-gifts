@@ -32,10 +32,11 @@
     <script type="text/javascript">
      var totalPages = 5;
     //  var person = location.hash.substr(1);
-    var person = "flashdance"
+    // var person = "nina"
+     var person = location.host.split('.')[0];
 
-      function gift(n) {
-        return {
+    function gift(n) {
+      return {
           type: 'image',
           src: 'src/'+person+'/img-'+(n+1)+'.png',
           interactive: false
