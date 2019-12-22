@@ -63,6 +63,18 @@ body {
     cursor: pointer;
     /*top: -30px;*/
   }
+
+  #button3 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: -1px 1px 0.1em grey;
+    text-decoration: underline;
+    position: relative;
+    cursor: pointer;
+    /*top: -30px;*/
+  }
   
   .label a:hover {
     text-shadow: -1px 1px 0.1em  grey, 0 0 0.2em #99cccc;
