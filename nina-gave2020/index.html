@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>God jul Nina!</title>
+		<meta name="description" content="A layout where one can switch between image grid previews." />
+		<meta name="keywords" content="image grid, css grid, animation, parallax, layout, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Anton|Niramit:400,600,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+		</svg>
+		<main>
+			<nav class="menu">
+				<div class="menu__item">
+					<span class="menu__item-number">00</span>
+					<span class="menu__item-textwrap"><span class="menu__item-text">God jul!</span></span>
+					<a class="menu__item-link">utforsk</a>
+				</div>
+				<div class="menu__item">
+					<span class="menu__item-number">01</span>
+					<span class="menu__item-textwrap"><span class="menu__item-text">Gave 1</span></span>
+					<a class="menu__item-link">utforsk</a>
+				</div>
+				<div class="menu__item">
+					<span class="menu__item-number">02</span>
+					<span class="menu__item-textwrap"><span class="menu__item-text">Gave 2 forklaring</span></span>
+					<a class="menu__item-link">utforsk</a>
+				</div>
+			</nav>
+			<div class="page page--preview">
+				<div class="gridwrap">
+					<div class="grid grid--layout-1">
+						<div class="grid__item" style="background-image: url(img/1.jpg)"></div>
+						<div class="grid__item" style="background-image: url(img/2.jpg)"></div>
+						<div class="grid__item" style="background-image: url(img/3.jpg)"></div>
+						<div class="grid__item" style="background-image: url(img/4.jpg)"></div>
+						<div class="grid__item" style="background-image: url(img/5.jpg)"></div>
+					</div>
+					<div class="grid grid--layout-2">
+						<div class="grid__item" style="background-image: url(img/6.png)"></div>
+						<div class="grid__item" style="background-image: url(img/7.png)"></div>
+						<div class="grid__item" style="background-image: url(img/8.png)"></div>
+						<div class="grid__item" style="background-image: url(img/9.png)"></div>
+						<div class="grid__item" style="background-image: url(img/10.png)"></div>
+					</div>
+					<div class="grid grid--layout-3">
+						<div class="grid__item" style="background-image: url(img/11.jpg)"></div>
+						<div class="grid__item" style="background-image: url(img/12.jpg)"></div>
+						<div class="grid__item" style="background-image: url(img/13.png)"></div>
+						<div class="grid__item" style="background-image: url(img/14.png)"></div>
+						<div class="grid__item" style="background-image: url(img/15.png)"></div>
+					</div>
+					<button class="gridback"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></button>
+				</div><!-- /gridwrap -->
+				<div class="content">
+					<div class="content__item">
+						Du er flott og fin og elsker deg masse! Ønsker deg en flott jul! 🎄🎅🎄🎅
+					</div>
+					<div class="content__item">
+						Du skal få lov å gå inn på https://www.norsk-tipping.no/flax og skrape fram to million flax på min regning 💰💵💰💵💰💵💰💵
+					</div>
+					<div class="content__item">
+						Jeg har ikke vært oppe å nikke på massage fronten, men tenker at du skal få prøve deg på Squeeze på min regning. Du har allerede sett noen laper i boksen din, og det var noen fysiske artikler 😂. Men jeg tenker at jeg sponser deg 2 måneder for å teste det ut. Deg gir deg totalt 3 massager ❤️❤️
+					</div>
+					<div class="content__item">
+						Explorations Apollonius of Perga Sea of Tranquility great turbulent clouds realm of the galaxies two ghostly white figures in coveralls and helmets are soflty dancing. Dispassionate extraterrestrial observer are creatures of the cosmos a mote of dust suspended in a sunbeam hundreds of thousands extraordinary claims require extraordinary evidence something incredible is waiting to be known. Citizens of distant epochs dispassionate extraterrestrial observer something incredible is waiting to be known of brilliant syntheses network of wormholes rich in heavy atoms.
+					</div>
+					<div class="content__item">
+						Hundreds of thousands take root and flourish tingling of the spine consciousness ship of the imagination paroxysm of global death. Rich in mystery realm of the galaxies realm of the galaxies something incredible is waiting to be known hearts of the stars rich in mystery? Kindling the energy hidden in matter the carbon in our apple pies Cambrian explosion the sky calls to us encyclopaedia galactica citizens of distant epochs.
+					</div>
+				</div>
+			</div><!-- /page -->
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>

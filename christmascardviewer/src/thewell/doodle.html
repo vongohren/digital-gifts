@@ -1,0 +1,40 @@
+<html><head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/doodle-style.css">
+    <title></title>
+    <script src="../../js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="label">
+        <span>Gavekortet kommer i posten</span>
+        <br/>
+        <span>Men har kan du friste deg selv litt</span>
+        <br/>
+        <div id="button">The well</div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        var url = "https://thewell.no/"
+        function openWebPage() {
+            var win = window.open(url, '_blank');
+            if (win) {
+                //Browser has allowed it to be opened
+                win.focus();
+            } else {
+                //Browser has blocked it
+                alert('Please allow popups for this website');
+            }
+        }
+        $('#button').on('click', function() {
+            openWebPage()
+            return false;
+        });
+    });
+
+    </script>
+  
+
+</body></html>

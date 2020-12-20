@@ -1,0 +1,56 @@
+<html><head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/doodle-style.css">
+    <title></title>
+    <script src="../../js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="label">
+        <span>Du styrer litt når og vi tar det i ditt tempo 😘!</span>
+        <br/>
+        <span>Men har kan du friste deg selv litt</span>
+        <br/>
+        <br/>
+        <div id="button">Winter</div>
+        <br/>
+        <div>&</div>
+        <br/>
+        <div id="button2">Summer</div>
+        <br/>
+        <div>&</div>
+        <br/>
+        <div id="button3">Må ikke glemme forrige gaven din</div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        function openWebPage(url) {
+            var win = window.open(url, '_blank');
+            if (win) {
+                //Browser has allowed it to be opened
+                win.focus();
+            } else {
+                //Browser has blocked it
+                alert('Please allow popups for this website');
+            }
+        }
+        $('#button').on('click', function() {
+            openWebPage('https://www.youtube.com/watch?v=ysdn2xbvTLo')
+            return false;
+        });
+        $('#button2').on('click', function() {
+            openWebPage('https://youtu.be/gPNmHGmvw80?t=17');
+            return false;
+        });
+        $('#button3').on('click', function() {
+            openWebPage('http://ninabriller.vongohren.me/');
+            return false;
+        });
+    });
+
+    </script>
+  
+
+</body></html>
