@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "nina2020",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
