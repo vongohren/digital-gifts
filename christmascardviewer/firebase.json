@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site":"digitalejulegaver",
     "public": "./",
     "ignore": [
       "firebase.json",

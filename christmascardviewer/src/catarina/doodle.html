@@ -1,0 +1,51 @@
+<html><head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/doodle-style.css">
+    <title></title>
+    <script src="../../js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="label">
+        <span>Gorm og jeg gleder oss til en helaften med deg!</span>
+        <br/>
+        <div>Gå inn på restuarant guiden og vurder steder å spise</div>
+        <br/>
+        <div id="button3">Restaurant guiden</div>
+        <br/>
+        <div>Gå inn på denne barguiden og vurder</div>
+        <br/>
+        <div id="button2">Bar guiden</div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        function openWebPage(url) {
+            var win = window.open(url, '_blank');
+            if (win) {
+                //Browser has allowed it to be opened
+                win.focus();
+            } else {
+                //Browser has blocked it
+                alert('Please allow popups for this website');
+            }
+        }
+        $('#button').on('click', function() {
+            openWebPage('https://www.filmweb.no/trailere/article1412931.ece')
+            return false;
+        });
+        $('#button2').on('click', function() {
+            openWebPage('https://www.visitoslo.com/no/spise-og-drikke/bar-pub/');
+            return false;
+        });
+        $('#button3').on('click', function() {
+            openWebPage('https://restaurantguiden.aftenposten.no/');
+            return false;
+        });
+    });
+
+    </script>
+  
+
+</body></html>
