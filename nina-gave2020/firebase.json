@@ -8,7 +8,8 @@
       "**/node_modules/**",
       "README.md",
       ".gitignore",
-      ".firebase/"
+      ".firebase/",
+      "backup/"
     ]
   }
 }
