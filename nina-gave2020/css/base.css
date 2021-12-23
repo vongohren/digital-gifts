@@ -282,7 +282,7 @@ main {
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	background-size: cover;
+	background-size: contain;
 }
 
 .grid--open .grid__item {
@@ -291,7 +291,6 @@ main {
 
 .grid__item::after {
 	content: '';
-	background: rgba(0,0,0,0.7);
 	position: absolute;
 	width: 100%;
 	height: 100%;
